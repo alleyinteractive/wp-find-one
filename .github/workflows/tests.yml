@@ -29,6 +29,9 @@ jobs:
       WP_CORE_DIR: /tmp/wordpress
       WP_VERSION: ${{ matrix.wp_version }}
       WP_MULTISITE: ${{ matrix.multisite }}
+      WP_DB_HOST: 127.0.0.1
+      WP_DB_USER: root
+      WP_DB_PASSWORD: '""'
 
     steps:
       - name: Check out code
