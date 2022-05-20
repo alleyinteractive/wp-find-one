@@ -21,7 +21,7 @@ jobs:
         ports:
           - 3306:3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
-    continue-on-error: ${{ matrix.can_fail }}
+    continue-on-error: ${{ matrix.multisite == "1" }}
 
     name: WordPress ${{ matrix.wp_version }} @ PHP ${{ matrix.php }} (WP_MULTISITE=${{ matrix.multisite }})
     env:
