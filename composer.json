@@ -1,0 +1,45 @@
+{
+    "name": "alleyinteractive/wp-find-one",
+    "description": "Query for and return one WordPress post, term, or other object, bypassing intermediate arrays.",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Alley",
+            "email": "info@alley.co"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/Alley/WP/find-one.php",
+            "src/Alley/WP/find-result.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "classmap-authoritative": true,
+        "allow-plugins": {
+            "alleyinteractive/composer-wordpress-autoloader": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "require": {
+        "php": "^7.4 || ^8.0"
+    },
+    "require-dev": {
+        "alleyinteractive/alley-coding-standards": "^0.3",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+        "mantle-framework/testkit": "^0.1",
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "phpcbf": "phpcbf",
+        "phpcs": "phpcs",
+        "phpunit": "phpunit"
+    },
+    "extra": {
+        "wordpress-autoloader": {
+            "inject": true
+        }
+    }
+}
