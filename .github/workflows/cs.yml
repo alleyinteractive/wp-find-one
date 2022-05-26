@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  phpcs:
+  cs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: true
@@ -35,4 +35,7 @@ jobs:
           command: composer install
 
       - name: Run PHPCS
-        run: composer run phpcs
+        run: composer run-script phpcs
+
+      - name: Run PHP-CS-Fixer
+        run: vendor/bin/php-cs-fixer fix -v --dry-run --stop-on-violation --using-cache=no --allow-risky=yes

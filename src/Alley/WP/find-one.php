@@ -22,8 +22,8 @@ namespace Alley\WP;
 function find_one_post( array $args ) {
 	return find_result(
 		\WP_Post::class,
-		\get_posts( // phpcs:ignore WordPressVIPMinimum.Functions.RestrictedFunctions.get_posts_get_posts
-			\array_merge(
+		get_posts( // phpcs:ignore WordPressVIPMinimum.Functions.RestrictedFunctions.get_posts_get_posts
+			array_merge(
 				$args,
 				[
 					'posts_per_page'   => 1,
@@ -44,8 +44,8 @@ function find_one_post( array $args ) {
 function find_one_term( array $args ) {
 	return find_result(
 		\WP_Term::class,
-		\get_terms(
-			\array_merge(
+		get_terms(
+			array_merge(
 				$args,
 				[
 					'number' => 1,
@@ -65,8 +65,8 @@ function find_one_term( array $args ) {
 function find_one_comment( array $args ) {
 	return find_result(
 		\WP_Comment::class,
-		\get_comments(
-			\array_merge(
+		get_comments(
+			array_merge(
 				$args,
 				[
 					'number' => 1,
@@ -86,8 +86,8 @@ function find_one_comment( array $args ) {
 function find_one_user( array $args ) {
 	return find_result(
 		\WP_User::class,
-		\get_users(
-			\array_merge(
+		get_users(
+			array_merge(
 				$args,
 				[
 					'number' => 1,
@@ -107,8 +107,8 @@ function find_one_user( array $args ) {
 function find_one_site( array $args ) {
 	return find_result(
 		\WP_Site::class,
-		\get_sites(
-			\array_merge(
+		get_sites(
+			array_merge(
 				$args,
 				[
 					'number' => 1,

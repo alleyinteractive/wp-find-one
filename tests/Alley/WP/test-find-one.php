@@ -106,7 +106,7 @@ class Test_Find_One extends Test_Case {
 	 * Test that `find_one_site()` finds an expected \WP_Site object.
 	 */
 	public function test_find_one_site_finds_site() {
-		if ( ! \is_multisite() ) {
+		if ( ! is_multisite() ) {
 			$this->markTestSkipped( __METHOD__ . ' requires Multisite' );
 		}
 

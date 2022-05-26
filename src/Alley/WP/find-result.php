@@ -30,7 +30,7 @@ function find_result( string $class, $results ) {
 		return null;
 	}
 
-	$result = \reset( $results );
+	$result = reset( $results );
 
 	if ( ! \is_object( $result ) ) {
 		// For example, queries that return only IDs or `id=>parent`.

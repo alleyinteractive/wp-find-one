@@ -53,4 +53,4 @@ jobs:
           command: composer install
 
       - name: Run PHPUnit
-        run: composer run phpunit
+        run: composer run-script phpunit
