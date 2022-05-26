@@ -73,7 +73,7 @@ if ( ! empty( $category[0] ) ) {
 }
 ```
 
-The underlying `find_result()` function accepts a `$class` of object to search for and the array of query results:
+The underlying `find_result()` function accepts the fully qualified class name of the object to search for and the array of query results:
 
 ```php
 <?php
