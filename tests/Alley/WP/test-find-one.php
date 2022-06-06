@@ -17,7 +17,7 @@ use Mantle\Testkit\Test_Case;
 /**
  * Unit tests for the `find_one()` functions.
  */
-class Test_Find_One extends Test_Case {
+final class Test_Find_One extends Test_Case {
 	/**
 	 * Test that `find_one_post()` finds an expected \WP_Post object.
 	 */

@@ -15,7 +15,7 @@ namespace Alley\WP\Fixtures;
 /**
  * A class that does nothing but can be instantiated and referenced.
  */
-class Noop {
+final class Noop {
 	/**
 	 * Called when a script tries to call this object as a function.
 	 */

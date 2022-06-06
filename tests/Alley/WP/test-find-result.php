@@ -18,7 +18,7 @@ use Mantle\Testkit\Test_Case;
 /**
  * Unit tests for `find_result()`.
  */
-class Test_Find_Result extends Test_Case {
+final class Test_Find_Result extends Test_Case {
 	/**
 	 * Test that `find_result()` plucks the expected value from the given args.
 	 *
