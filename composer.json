@@ -10,6 +10,9 @@
         }
     ],
     "autoload": {
+        "classmap": [
+            "src/"
+        ],
         "files": [
             "src/Alley/WP/find-one.php",
             "src/Alley/WP/find-result.php"
