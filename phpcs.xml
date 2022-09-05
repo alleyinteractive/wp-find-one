@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Find One" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
-    <description>PHP_CodeSniffer standard for Find One.</description>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="alleyinteractive/wp-find-one" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+    <description>PHP_CodeSniffer standard for alleyinteractive/wp-find-one.</description>
 
     <file>src/</file>
     <file>tests/</file>
