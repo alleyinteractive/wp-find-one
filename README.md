@@ -106,7 +106,7 @@ Helper functions are available for all core WordPress data types that have meta 
 
 ### License
 
-[GPL-2.0-or-later](https://github.com/alleyinteractive/wp-caper/blob/main/LICENSE)
+[GPL-2.0-or-later](https://github.com/alleyinteractive/wp-find-one/blob/main/LICENSE)
 
 ### Maintainers
 
