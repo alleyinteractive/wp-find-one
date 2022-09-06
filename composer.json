@@ -11,8 +11,8 @@
   ],
   "autoload": {
     "files": [
-      "src/Alley/WP/find-one.php",
-      "src/Alley/WP/find-result.php"
+      "src/alley/wp/find-one.php",
+      "src/alley/wp/find-result.php"
     ]
   },
   "config": {
@@ -39,10 +39,10 @@
   "extra": {
     "wordpress-autoloader": {
       "autoload": {
-        "Alley\\": "src/Alley/"
+        "Alley\\": "src/alley/"
       },
       "autoload-dev": {
-        "Alley\\": "tests/Alley/"
+        "Alley\\": "tests/alley/"
       }
     }
   }
