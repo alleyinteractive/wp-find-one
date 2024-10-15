@@ -48,7 +48,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Alley\\WP\\Tests\\": "tests/alley/wp"
+      "Alley\\WP\\Tests\\": "tests/"
     }
   }
 }

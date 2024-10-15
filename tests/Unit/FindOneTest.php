@@ -10,7 +10,7 @@
  * @package wp-find-one
  */
 
-namespace Alley\tests;
+namespace Alley\WP\Tests\Unit;
 
 use Mantle\Testkit\Test_Case;
 

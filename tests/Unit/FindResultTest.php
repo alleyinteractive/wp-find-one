@@ -10,9 +10,9 @@
  * @package wp-find-one
  */
 
-namespace Alley\WP\Tests;
+namespace Alley\WP\Tests\Unit;
 
-use Alley\tests\fixtures\Noop;
+use Alley\WP\Tests\Fixtures\Noop;
 use Mantle\Testkit\Test_Case;
 
 use function Alley\WP\find_result;
@@ -38,7 +38,7 @@ final class FindResultTest extends Test_Case {
 	 *
 	 * @return array Array of data.
 	 */
-	public function data_find_result() {
+	public static function data_find_result() {
 		$noop = new Noop();
 		$post = 123;
 
