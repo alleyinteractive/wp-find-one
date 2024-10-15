@@ -22,7 +22,7 @@ final class Test_Find_One extends Test_Case {
 	 * Test that `find_one_post()` finds an expected \WP_Post object.
 	 */
 	public function test_find_one_post_finds_post() {
-		$post_id = static::factory()->post->create(
+		$post_id = self::factory()->post->create(
 			[
 				'post_status' => 'draft',
 			]
@@ -43,7 +43,7 @@ final class Test_Find_One extends Test_Case {
 	 * Test that `find_one_term()` finds an expected \WP_Term object.
 	 */
 	public function test_find_one_term_finds_term() {
-		$term_id = static::factory()->term->create(
+		$term_id = self::factory()->term->create(
 			[
 				'name' => 'data1',
 			]
@@ -66,7 +66,7 @@ final class Test_Find_One extends Test_Case {
 	public function test_find_one_comment_finds_comment() {
 		$url = 'https://alley.co';
 
-		$comment_id = static::factory()->comment->create(
+		$comment_id = self::factory()->comment->create(
 			[
 				'comment_author_url' => $url,
 			]
@@ -86,7 +86,7 @@ final class Test_Find_One extends Test_Case {
 	 * Test that `find_one_user()` finds an expected \WP_User object.
 	 */
 	public function test_find_one_user_finds_user() {
-		$user_id = static::factory()->user->create(
+		$user_id = self::factory()->user->create(
 			[
 				'user_login' => 'data1',
 			]
@@ -113,7 +113,7 @@ final class Test_Find_One extends Test_Case {
 		// WordPress < 5.0 doesn't ensure paths are wrapped in slashes.
 		$path = '/data1/';
 
-		$blog_id = static::factory()->blog->create(
+		$blog_id = self::factory()->blog->create(
 			[
 				'path' => $path,
 			]

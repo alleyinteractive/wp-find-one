@@ -32,11 +32,13 @@
     <!-- Set the allowed prefixes for functions, etc. -->
     <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
         <properties>
-            <property name="prefixes" type="array" value="Alley"/>
+            <property name="prefixes" type="array">
+                <element value="alley"/>
+            </property>
         </properties>
     </rule>
 
-    <!-- Use a test-*.php class naming convention. -->
+    <!-- Use PSR4 naming convention. -->
     <rule ref="WordPress.Files.FileName.InvalidClassFileName">
         <exclude-pattern>tests/</exclude-pattern>
     </rule>
