@@ -1,6 +1,6 @@
 <?php
 /**
- * Class file for Test_Find_One
+ * Class file for FindOneTest
  *
  * (c) Alley <info@alley.com>
  *
@@ -10,14 +10,20 @@
  * @package wp-find-one
  */
 
-namespace Alley\WP;
+namespace Alley\tests;
 
 use Mantle\Testkit\Test_Case;
+
+use function Alley\WP\find_one_comment;
+use function Alley\WP\find_one_post;
+use function Alley\WP\find_one_site;
+use function Alley\WP\find_one_term;
+use function Alley\WP\find_one_user;
 
 /**
  * Unit tests for the `find_one()` functions.
  */
-final class Test_Find_One extends Test_Case {
+final class FindOneTest extends Test_Case {
 	/**
 	 * Test that `find_one_post()` finds an expected \WP_Post object.
 	 */

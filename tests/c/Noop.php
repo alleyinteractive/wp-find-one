@@ -10,7 +10,7 @@
  * @package wp-find-one
  */
 
-namespace Alley\WP\Fixtures;
+namespace Alley\WP\Tests\Fixtures;
 
 /**
  * A class that does nothing but can be instantiated and referenced.

@@ -22,8 +22,8 @@
   "prefer-stable": true,
   "autoload": {
     "files": [
-      "src/alley/wp/find-one.php",
-      "src/alley/wp/find-result.php"
+      "src/find-one.php",
+      "src/find-result.php"
     ]
   },
   "config": {
@@ -45,5 +45,10 @@
       "@phpstan",
       "@phpunit"
     ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Alley\\WP\\Tests\\": "tests/alley/wp"
+    }
   }
 }

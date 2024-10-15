@@ -1,6 +1,6 @@
 <?php
 /**
- * Class file for Test_Find_Result
+ * Class file for FindResultTest
  *
  * (c) Alley <info@alley.com>
  *
@@ -10,15 +10,17 @@
  * @package wp-find-one
  */
 
-namespace Alley\WP;
+namespace Alley\WP\Tests;
 
-use Alley\WP\Fixtures\Noop;
+use Alley\tests\fixtures\Noop;
 use Mantle\Testkit\Test_Case;
+
+use function Alley\WP\find_result;
 
 /**
  * Unit tests for `find_result()`.
  */
-final class Test_Find_Result extends Test_Case {
+final class FindResultTest extends Test_Case {
 	/**
 	 * Test that `find_result()` plucks the expected value from the given args.
 	 *
