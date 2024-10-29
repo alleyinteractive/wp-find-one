@@ -1,6 +1,6 @@
 <?php
 /**
- * Class file for Test_Find_Result
+ * Class file for FindResultTest
  *
  * (c) Alley <info@alley.com>
  *
@@ -10,23 +10,26 @@
  * @package wp-find-one
  */
 
-namespace Alley\WP;
+namespace Alley\WP\Tests\Unit;
 
-use Alley\WP\Fixtures\Noop;
+use Alley\WP\Tests\Fixtures\Noop;
 use Mantle\Testkit\Test_Case;
+
+use PHPUnit\Framework\Attributes\DataProvider;
+
+use function Alley\WP\find_result;
 
 /**
  * Unit tests for `find_result()`.
  */
-final class Test_Find_Result extends Test_Case {
+final class FindResultTest extends Test_Case {
 	/**
 	 * Test that `find_result()` plucks the expected value from the given args.
-	 *
-	 * @dataProvider data_find_result
 	 *
 	 * @param array $args     Function arguments.
 	 * @param mixed $expected Expected return value.
 	 */
+	#[dataProvider( 'data_find_result' )]
 	public function test_find_result( $args, $expected ) { // phpcs:ignore Generic.NamingConventions.ConstructorName.OldStyle
 		$this->assertSame( $expected, find_result( ...$args ) );
 	}
@@ -36,7 +39,7 @@ final class Test_Find_Result extends Test_Case {
 	 *
 	 * @return array Array of data.
 	 */
-	public function data_find_result() {
+	public static function data_find_result() {
 		$noop = new Noop();
 		$post = 123;
 
