@@ -7,7 +7,7 @@ The `find_one()` family of functions are wrappers for common WordPress retrieval
 Install the latest version with:
 
 ```bash
-$ composer require alleyinteractive/wp-find-one
+composer require alleyinteractive/wp-find-one
 ```
 
 ## Basic usage

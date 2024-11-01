@@ -16,14 +16,14 @@ namespace Alley\WP;
  * Returns the first item in the given array if the item is an instance of a
  * specific class or is a non-object.
  *
- * @param string $class   If the result plucked from $results is an object, the
- *                        name of the class the object must be an instance of
- *                        for it to be returned.
- * @param array  $results The array of results from the WordPress query
- *                        function to retrieve the result from.
+ * @param string        $class   If the result plucked from $results is an object, the
+ *                               name of the class the object must be an instance of
+ *                               for it to be returned.
+ * @param mixed|mixed[] $results The array of results from the WordPress query
+ *                               function to retrieve the result from.
  * @return mixed|null An object of the given $class; a non-object if the item
- *                        plucked from $results is not an object; null if no
- *                        result is found.
+ *                               plucked from $results is not an object; null if no
+ *                               result is found.
  */
 function find_result( string $class, $results ) {
 	if ( ! $results || ! \is_array( $results ) ) {
